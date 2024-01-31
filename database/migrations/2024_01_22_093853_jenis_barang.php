@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('tbl_jenis_barang', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_jenis')->nullable();
+            $table->integer('nama_jenis')->nullable();
             $table->timestamps();
         });
     }
@@ -23,3 +23,4 @@ return new class extends Migration
         Schema::dropIfExists('tbl_jenis_barang');
     }
 };
+
